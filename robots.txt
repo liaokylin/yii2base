@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /*?*
+Disallow: /*.jpg$
+Disallow: /*.png$
+Disallow: /runtime/
+Disallow: /js/
+Disallow: /css/
+Disallow: http://images.izhupu.com/*?*

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="mobile-agent" content="format=xhtml; url={{ mobile_url }}">
+    <meta name="mobile-agent" content="format=html5; url={{ mobile_url }}">
+    <meta name="mobile-agent" content="format=wml; url={{ mobile_url }}">
+    <meta name="baidu-site-verification" content="ol8Ieotkd5" />
+    <meta name="sogou_site_verification" content="X0KyzdMlm6"/>
+    <meta name="keywords" content="{% block keywords %}{% endblock %}" />
+    <meta name="description" content="{% block description %}{% endblock %}" />
+    <link href="/css/common.css" type="text/css" rel="stylesheet"/>
+    {% block css %}
+    {% endblock %}
+</head>
+<body class="show-body">
+{% block main %}
+
+{% endblock %}
+{% include "@app/views/footer.html"%}
+
+<script src="/js/jquery.2.1.4.min.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/baidu.js"></script>
+{% block js %}
+{% endblock %}
+</body>
+</html>

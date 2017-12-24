@@ -1,0 +1,2 @@
+User-agent: Sogou web spider/4.0
+Disallow: /
